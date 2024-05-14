@@ -16,7 +16,8 @@ archives:
       - LICENSE
       - README.md
       - third_party_licenses.md
-      - scripts/test/{{.Os}}-{{.Arch}}/run
+      - scripts/test/{{.Os}}-{{.Arch}}/run${{.Os == 'windows' && '.bat' || ''}}
+        strip_parent: true
 
     format_overrides:
       - goos: windows
