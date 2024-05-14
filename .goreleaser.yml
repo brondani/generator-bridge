@@ -16,6 +16,7 @@ archives:
       - LICENSE
       - README.md
       - third_party_licenses.md
+      - scripts/test/{{.Os}}-{{.Arch}}/run
 
     format_overrides:
       - goos: windows
